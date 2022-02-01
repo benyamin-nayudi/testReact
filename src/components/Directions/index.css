@@ -1,0 +1,80 @@
+.direction-container{
+    margin: 2rem 0;
+    padding-top: 1rem;
+}
+
+.direction-wrapper{
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.direction-wrapper h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    font-family: var(--ff-header);
+    margin-bottom: 2rem;
+}
+
+.direction-wrapper h3{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: var(--fw-med);
+    font-size: 1.6rem;
+}
+.days{
+    font-size: 1.2rem;
+}
+
+.map{
+    width: 80%;
+    height: 400px;
+    margin: .5rem auto;
+    margin-bottom: 3rem;
+   /* margin: auto */
+   text-align: center;
+    
+}
+
+
+@media (max-width:680px){
+    .direction-wrapper .address{
+        font-size: .8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .direction-wrapper span.slash{
+        display: none;
+    }
+
+    .direction-wrapper .address span:not(.slash){
+        font-size: .8rem;
+        margin-bottom: .2rem;
+        display: block;
+    }
+    
+    
+
+    .direction-wrapper .info span:not(.slash){
+        font-size: .8rem;
+        margin-bottom: .2rem;
+        display: block;
+    }
+    
+    
+    .direction-wrapper h3{
+        font-size: 1.2rem;
+    }
+    
+    .days span{
+        font-size: .8rem;
+        margin-bottom: .2rem;
+        display: block;
+
+    }
+
+
+
+
+}

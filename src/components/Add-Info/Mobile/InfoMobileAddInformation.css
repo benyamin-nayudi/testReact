@@ -1,0 +1,80 @@
+.info-mobile-add-information {
+  padding: 0 2rem;
+}
+
+.add-info-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.info-mobile-form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 1rem;
+  flex-grow: 1;
+}
+
+.info-mobile-form-inputs input,
+.info-mobile-form-inputs textarea {
+  height: 2.5rem;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  resize: none;
+}
+
+.info-mobile-form-inputs input:focus,
+.info-mobile-form-inputs textarea:focus {
+  border: 2px solid rgb(38, 186, 245);
+  outline: none;
+}
+
+.info-mobile-form-inputs textarea::placeholder {
+  padding-top: 1rem;
+}
+
+.info-mobile-form-inputs .coupon-btn {
+  margin: 1.5rem 0 0.3rem 1rem;
+  flex-grow: 0;
+}
+
+.info-mobile-form-inputs .coupon-form input:focus {
+  border: 1px solid rgb(38, 186, 245);
+  outline: none;
+}
+
+.info-mobile-form-inputs .coupon-form input,
+.info-mobile-form-inputs .coupon-form .coupon-icon {
+  border: none;
+}
+
+.info-mobile-form-inputs p {
+  margin-left: 1rem;
+}
+
+.info-mobile-form-inputs .info-submit {
+  display: inline-block;
+  width: 100%;
+  padding: 0.6rem 0.5rem;
+  border: none;
+  margin: 1rem 0 1rem;
+
+  background-color: var(--clr--pink-200);
+  color: white;
+
+  cursor: pointer;
+}
+
+.info-form-error {
+  color: red;
+  width: 100%;
+}
+
+.info-form-error p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0;
+}

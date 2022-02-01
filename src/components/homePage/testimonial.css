@@ -1,0 +1,72 @@
+/* 
+//////////////////////
+$    testimonial
+//////////////////////
+*/
+
+.testimonials-container {
+  padding: 3rem 2rem;
+
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-title {
+  font-size: var(--fs-950);
+  font-family: var(--ff-header);
+  font-weight: var(--fw-med);
+}
+
+.testimonials {
+  max-width: 63rem;
+  display: flex;
+  flex-direction: row;
+  gap: 7rem;
+  margin: 0 auto;
+}
+
+.testimonials > * {
+  text-align: center;
+  font-size: var(--fs-200);
+  line-height: 1.9;
+}
+
+.testimonial::before {
+  content: "\f10e";
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+}
+
+.testimonial .author {
+  font-weight: var(--fw-semi-bold);
+  margin-top: 1.3rem;
+  text-transform: capitalize;
+  font-size: var(--fs-500);
+}
+.testimonial .author span {
+  font-weight: var(--fw-regular);
+  font-style: italic;
+}
+
+@media (max-width: 800px) {
+  .testimonials {
+    flex-direction: column;
+    gap: 2rem;
+    flex-grow: 1;
+  }
+
+  .testimonials > * {
+    font-size: var(--fs-20);
+  }
+  .testimonial::before {
+    font-size: 1.9rem;
+  }
+
+  .testimonial {
+    padding: 0 2rem;
+  }
+}

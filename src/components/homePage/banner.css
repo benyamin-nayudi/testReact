@@ -1,0 +1,45 @@
+/* 
+//////////////////////
+$    banner
+//////////////////////
+*/
+
+.banner-container {
+  padding-top: 2rem;
+  background-image: url("https://res.cloudinary.com/dmzkhyktu/image/upload/v1643601178/banner_uzpsye.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 90vh;
+}
+
+.banner {
+  padding: 8rem 6rem;
+}
+.banner-title {
+  font-size: 8.5rem;
+  color: var(--clr-white);
+  font-family: var(--ff-header);
+}
+
+.banner-subtitle {
+  font-size: var(--fs-600);
+  color: var(--clr-white);
+  font-family: var(--ff-title);
+  font-weight: var(--fw-semi-bold);
+}
+
+@media (max-width: 970px) {
+  .banner-container {
+    background-position: left 40% center;
+    background-size: auto;
+    min-height: 90vh;
+  }
+  .banner-title {
+    font-size: 4rem;
+  }
+  .banner {
+    padding: 5rem 1rem;
+  }
+}

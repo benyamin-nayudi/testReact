@@ -1,0 +1,79 @@
+{
+  "nails": [
+    {
+      "id": 1,
+      "title": "pedicure",
+      "body": "i'm a tagline . click here to add your own text and edit men. ",
+      "time": "1hr ",
+      "price": "$30 "
+    },
+    {
+      "id": 2,
+      "title": "gel manicure",
+      "body": "i'm a tagline . click here to add your own text and edit men. ",
+      "time": "30 min ",
+      "price": "$60 "
+    },
+    {
+      "id": 3,
+      "title": "mani-pedi",
+      "body": "i'm a tagline . click here to add your own text and edit men. ",
+      "time": "30 min ",
+      "price": "$30 "
+    },
+    {
+      "id": 4,
+      "title": "full mani-pedi",
+      "body": "i'm a tagline . click here to add your own text and edit men. ",
+      "time": "1hr 30 min ",
+      "price": "$30 "
+    }
+  ],
+
+  "hair": [
+    {
+      "id": 1,
+      "title": "haircut",
+      "body": "i'm a tagline . click here to add your own text and edit men. ",
+      "time": "30 min ",
+      "price": "$70 "
+    },
+    {
+      "id": 2,
+      "title": "highlights",
+      "body": "i'm a tagline . click here to add your own text and edit men. ",
+      "time": "1hr 30 min ",
+      "price": "$30 "
+    },
+    {
+      "id": 3,
+      "title": "hair styling",
+      "body": "i'm a tagline . click here to add your own text and edit men. ",
+      "time": "45 min ",
+      "price": "$30 "
+    }
+  ],
+  "facial": [
+    {
+      "id": 1,
+      "title": "anti-ageing facial",
+      "body": "i'm a tagline . click here to add your own text and edit men. ",
+      "time": "1hr",
+      "price": "$20 "
+    },
+    {
+      "id": 2,
+      "title": "oxygen facial",
+      "body": "i'm a tagline . click here to add your own text and edit men. ",
+      "time": "30 min ",
+      "price": "1hr "
+    },
+    {
+      "id": 3,
+      "title": "deep cleansing facial",
+      "body": "i'm a tagline . click here to add your own text and edit men. ",
+      "time": "45 min ",
+      "price": "$50 "
+    }
+  ]
+}

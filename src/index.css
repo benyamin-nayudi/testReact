@@ -1,0 +1,151 @@
+/* 
+//////////////////////
+    custom-properties
+//////////////////////
+*/
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap");
+
+:root {
+  --spacer: 1rem;
+
+  --clr--pink-100: #fcd2c0;
+  --clr--pink-200: #fab89d;
+  --clr-black: #000000;
+  --clr-white: #ffffff;
+
+  --ff-text: "Poppins", sans-serif;
+  --ff-header: "Playball", cursive;
+  --ff-title: "Playfair Display", serif;
+
+  --fs-50: 0.75rem; /*12*/
+  --fs-100: 0.875rem; /*14*/
+  --fs-200: 0.937rem; /*15*/
+  --fs-300: 1rem; /*16*/
+  --fs-400: 1.0625rem; /*17*/
+  --fs-500: 1.1875rem; /*19*/
+  --fs-600: 1.375rem; /*22*/
+  --fs-700: 1.75rem; /*28*/
+  --fs-750: 1.875rem; /*30*/
+  --fs-800: 1.75rem; /*43*/
+  --fs-900: 3.75rem; /*57*/
+  --fs-950: 3.75rem; /*60*/
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-med: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  --m-size: 970px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+ul[class],
+li[class] {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: var(--fs-400);
+  font-family: var(--ff-text);
+  font-weight: var(--fw-light);
+}
+
+/*  
+/////////////////
+    resets
+/////////////////
+*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+/* 
+//////////////////////
+    utility classes
+//////////////////////
+*/
+
+.flow-content > * + * {
+  margin-top: var(--spacer);
+}
+
+.flow-content-xl {
+  --spacer: 1.5rem;
+}
+
+.fancy-border {
+  position: relative;
+}
+
+.fancy-border::after {
+  content: "";
+  width: 1.8rem;
+  height: 3px;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: var(--fancy-border, var(--clr-black));
+}
+
+/* 
+//////////////////////
+    general styling
+//////////////////////
+*/
+
+.toggle-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* 
+//////////////////////
+    components
+//////////////////////
+*/
+
+.unobserve {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity ease-in-out 1s, transform ease-in-out 1s;
+}
+
+.observe {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity ease-in-out 1s, transform ease-in-out 1s;
+}

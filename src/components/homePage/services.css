@@ -1,0 +1,145 @@
+/* 
+////////////////
+$   services
+////////////////
+ */
+
+.services {
+  max-width: 70rem;
+  min-height: 400px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  transform: translateY(-100px);
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.services > * {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.services .row-two,
+.services .row-one {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-two > *,
+.row-one > * {
+  flex-basis: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  font-family: var(--ff-title);
+  font-weight: var(--fw-med);
+}
+.book-now {
+  font-size: var(--fs-50);
+  font-weight: var(--fw-med);
+  font-family: var(--ff-text);
+  color: var(--book-now-clr, --clr-white);
+  cursor: pointer;
+}
+
+.facial,
+.nails {
+  --book-now-clr: var(--clr-black);
+  background-color: var(--clr--pink-100);
+}
+
+.hair-style {
+  background-color: var(--clr-white);
+}
+
+.services-title {
+  font-size: var(--fs-500);
+  cursor: pointer;
+  font-weight: var(--fw-semi-bold);
+}
+
+.makeup {
+  --fancy-border: var(--clr-white);
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+
+.hair-style {
+  background-color: rgb(248, 248, 248);
+  color: var(--clr-black);
+}
+
+.mascara,
+.cream,
+.nail-polish,
+.makeup-kit {
+  background-image: url("https://res.cloudinary.com/dmzkhyktu/image/upload/v1643601177/mascara_kyxavt.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cream {
+  background-image: url("https://res.cloudinary.com/dmzkhyktu/image/upload/v1643601176/cream_fumcfo.jpg");
+}
+
+.nail-polish {
+  background-image: url("https://res.cloudinary.com/dmzkhyktu/image/upload/v1643601177/nail-polish_iblq1w.jpg");
+}
+.makeup-kit {
+  background-image: url("https://res.cloudinary.com/dmzkhyktu/image/upload/v1643601177/makeup-kit_pzkzmt.jpg");
+}
+
+@media (max-width: 750px) {
+  .services {
+    margin: 2rem 8rem;
+    transform: none;
+  }
+  .services .row-two,
+  .services .row-one {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row-one > *,
+  .row-two > * {
+    padding: 6rem;
+    aspect-ratio: 2/1;
+  }
+
+  .makeup-kit {
+    background-position: center;
+  }
+
+  .services-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .services {
+    margin: 2rem 2rem;
+    transform: none;
+  }
+  .row-one,
+  .row-two {
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .row-one > *,
+  .row-two > * {
+    padding: 3rem;
+    aspect-ratio: 2/1;
+  }
+  .services-title {
+    font-size: var(--fs-500);
+  }
+  .book-now {
+    font-size: 0.7rem;
+  }
+}

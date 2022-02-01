@@ -1,0 +1,363 @@
+.calendar-container {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-link {
+  margin-bottom: 3rem;
+  display: inline-block;
+  color: var(--clr--pink-200);
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.calendar-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.calendar-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-title {
+  font-family: var(--ff-title);
+  font-weight: var(--fw-regular);
+  margin-bottom: 4rem;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar .time-zone {
+  font-size: 0.8rem;
+  font-weight: var(--fw-semi-bold);
+  margin-bottom: 1rem;
+}
+
+.time-zone .local-time-zone {
+  color: var(--clr--pink-200);
+  text-decoration: underline;
+  margin-left: 0.5rem;
+}
+
+.calendar-btn {
+  display: flex;
+  gap: 1.2rem;
+  align-items: baseline;
+  margin-bottom: 2rem;
+}
+
+.calendar-btn .time {
+  font-size: var(--fs-100);
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+.calendar-btn .time > * {
+  width: 35px;
+}
+
+/* time navigator btns */
+
+.back-forward-btn button,
+.today-btn {
+  padding: 0.15rem 0.4rem;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.back-forward-btn .back-time {
+  border-right: none;
+}
+
+.back-forward-btn button:hover,
+.today-btn:hover {
+  cursor: pointer;
+}
+
+/*$ floating box beside the calendar */
+.calendar-floating {
+  border: 1px solid rgb(146, 146, 146);
+  padding: 1.5rem 1rem;
+  position: sticky;
+  top: 100px;
+  min-width: 250px;
+}
+
+.calendar-floating .floating-service {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-regular);
+  flex-grow: 0;
+}
+
+.calendar-floating .floating-time {
+  font-size: var(--fs-50);
+  font-weight: var(--fw-regular);
+  margin: 1rem 0;
+}
+
+.calendar-floating-btn {
+  width: 100%;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+
+  background-color: var(--clr--pink-200);
+  color: white;
+  text-align: center;
+  font-size: var(--fs-100);
+  border: none;
+  cursor: pointer;
+}
+
+.calendar-floating hr {
+  margin-bottom: 1.5rem;
+}
+
+.floating-date {
+  margin-bottom: 1rem;
+  font-size: 0.89rem;
+  font-weight: var(--fw-semi-bold);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.floating-date span:last-child {
+  padding: 0 0.7rem;
+}
+
+.floating-date span {
+  padding: 0 0.05rem;
+}
+
+.calendar-error {
+  color: red;
+  font-size: var(--fs-100);
+  font-weight: var(--fw-semi-bold);
+  text-align: center;
+  margin: 1rem auto 0;
+}
+
+/*$ calendar elements */
+
+.calendar-table,
+td {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid gray;
+  padding: 1rem 3rem 2rem 1rem;
+  transition: outline 50ms ease-in;
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  color: black;
+  font-weight: bold;
+}
+
+th {
+  padding-bottom: 0.7rem;
+}
+
+td:hover {
+  outline: 2px solid var(--clr--pink-200);
+  outline-offset: -2px;
+}
+
+.today {
+  text-decoration: underline;
+  color: var(--clr--pink-200);
+}
+
+.prev-date,
+.next-date {
+  color: gray;
+}
+
+.unavailable p {
+  text-align: center;
+  font-size: var(--fs-500);
+  font-weight: bold;
+  margin: 2rem 0;
+  color: red;
+}
+
+.not-available {
+  color: gray;
+}
+
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
+
+.toggle-weekly,
+.toggle-monthly {
+  margin-top: 1rem;
+  display: inline-block;
+  background-color: white;
+  border: none;
+  color: var(--clr--pink-200);
+}
+
+.calendar-btn-mobile {
+  display: none;
+}
+
+.time-order-view {
+  display: none;
+}
+
+.time-zone-mobile-view {
+  display: none;
+}
+
+.submit-info {
+  display: none;
+}
+
+/* 
+/////////////////////////
+responsive calendar view
+/////////////////////////
+*/
+
+@media (max-width: 900px) {
+  .calendar-btn,
+  .calendar-floating,
+  .time-zone {
+    display: none;
+  }
+
+  .calendar {
+    max-width: 500px;
+  }
+
+  /* month navigator */
+  .calendar-btn-mobile {
+    padding: 1rem 1rem;
+    display: block;
+  }
+
+  .time-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .back-time,
+  .forward-time {
+    color: var(--clr--pink-200);
+    opacity: 0.7;
+    background: none;
+    border: none;
+    font-size: 2.3rem;
+    cursor: pointer;
+  }
+
+  .month-year {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  /* calendar table */
+
+  .calendar-table-container {
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  .calendar-table {
+    margin: 0 auto;
+  }
+
+  tbody {
+    border-top: 2px solid rgba(185, 184, 184, 0.712);
+    border-bottom: 2px solid rgb(185, 184, 184, 0.712);
+  }
+  td {
+    border: none;
+    padding: 0.8rem 0.9rem;
+    font-weight: normal;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  td:hover,
+  td:focus {
+    outline: none;
+    color: white;
+    background-color: var(--clr--pink-200);
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  th {
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+  .today {
+    color: var(--clr--pink-200);
+  }
+
+  /* time zone select */
+
+  .time-zone-mobile-view {
+    display: block;
+    margin: 2rem 1rem;
+  }
+  .time-zone-mobile-view p {
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+  }
+
+  .time-zone-mobile-view .local-time-zone {
+    color: var(--clr--pink-200);
+    text-decoration: underline;
+  }
+
+  .time-order-view {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    padding: 0.1rem 0;
+    font-size: 0.7rem;
+
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+
+    cursor: pointer;
+  }
+
+  /* calendar mobile view port btn */
+  .submit-info {
+    display: block;
+
+    background-color: var(--clr--pink-200);
+    color: white;
+    font-weight: bold;
+    font-size: var(--fs-500);
+    border: none;
+
+    text-align: center;
+    margin: 1.5rem 2rem 0.7rem;
+    padding: 0.9rem 0;
+
+    cursor: pointer;
+  }
+}

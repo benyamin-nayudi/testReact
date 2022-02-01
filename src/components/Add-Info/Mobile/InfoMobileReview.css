@@ -1,0 +1,61 @@
+.info-mobile-container{
+    padding: 0 2rem;
+}
+
+.info-mobile-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.info-mobile-content > *{
+    margin-bottom: 1.3rem;
+}
+
+.info-mobile-content .info-back-btn{
+    margin-bottom: 2rem;
+    font-size: var(--fs-200);
+}
+
+.info-mobile-title{
+    font-size: var(--fs-500);
+    font-family: var(--ff-title);
+    font-weight: var(--fw-semi-bold);
+}
+
+.indent{
+    margin-left: 1.1rem;
+}
+
+.info-mobile-service{
+    font-size: var(--fs-300);
+    margin-bottom: 1rem;
+}
+
+
+.info-mobile-price-hour{
+    margin-bottom: 2rem;
+    font-size: var(--fs-50);
+    font-weight: var(--fw-regular);
+}
+
+.info-mobile-time{
+    font-size: var(--fs-50);
+    font-weight: var(--fw-regular);
+    margin-bottom: 1rem;
+}
+
+.time-desc{
+    font-size: var(--fs-50);
+}
+
+.info-mobile-link{
+    width:100%;
+    padding: .3rem 1rem;
+    margin-top: 1.5rem;
+    display: inline-block;
+    background-color: var(--clr--pink-200);
+    color:white;
+    text-align: center;
+}

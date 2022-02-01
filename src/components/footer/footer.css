@@ -1,0 +1,33 @@
+/* 
+//////////////////////
+$    footer
+//////////////////////
+*/
+
+.footer-container {
+  background-color: var(--clr-black);
+  padding: 4rem 2rem;
+  color: var(--clr-white);
+  text-align: center;
+  font-family: var(--ff-title);
+}
+
+.creator span {
+  font-style: italic;
+  font-size: var(--fs-600);
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.footer-social-list i {
+  font-size: 2.5rem;
+  border-radius: 50%;
+
+  transition: transform ease-in-out 0.2s;
+}

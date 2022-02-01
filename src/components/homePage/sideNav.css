@@ -1,0 +1,61 @@
+/* 
+///////////////
+$    SIDE NAV
+///////////////// 
+*/
+.side-nav {
+  position: fixed;
+  top: 50%;
+  right: 3rem;
+  direction: rtl;
+
+  z-index: 2;
+}
+
+.side-nav-list li {
+  margin-bottom: 0.7rem;
+}
+
+.side-nav-list a {
+  position: relative;
+  opacity: 0;
+  transition: opacity ease-in 0.3s;
+  font-weight: bold;
+  color: black;
+  color: #8e4bc5;
+}
+
+.side-nav-list a:hover {
+  opacity: 1;
+}
+
+.side-nav-list a.active {
+  opacity: 1;
+}
+
+.side-nav-list li::before {
+  content: "\f111";
+
+  position: absolute;
+  right: -20px;
+
+  line-height: 1.8;
+  font-size: 0.9rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: var(--after-fw, 100);
+  transition: all ease-in 0.3s;
+  color: #8e4bc5;
+}
+
+.after-background {
+  --after-fw: 900;
+}
+.after-background-color {
+  --after-clr: white;
+}
+
+@media (max-width: 970px) {
+  .side-nav {
+    display: none;
+  }
+}

@@ -1,0 +1,129 @@
+.complete-booking-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.complete-booking-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+}
+
+.complete-booking-title{
+    font-size: 1.8rem;
+    font-family: var(--ff-title);
+    font-weight: var(--fw-semi-bold);
+    text-transform: capitalize;
+    text-align:center
+}
+
+.complete-booking-subtitle{
+    font-size: 1rem;
+    font-weight: var(--fw-regular);  
+    text-align:center 
+}
+
+.final-booking-info{
+    border: 1px solid rgb(172, 170, 170);
+    padding: 3rem 7rem 3rem 3rem;
+    display: flex;
+}
+
+.final-booking-info > *{
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.complete-booking-time{
+    align-items: center;
+    border-right: 1px solid rgb(172, 170, 170);
+    padding-right: 3rem;
+}
+
+.complete-booking-time .day{
+    font-weight: var(--fw-regular);
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.complete-booking-time .month{
+    font-weight: var(--fw-regular);
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+
+.complete-booking-time .hour{
+    font-weight: var(--fw-regular);
+    font-size: .65rem;
+}
+
+.complete-service{
+    padding-left: 3rem;
+}
+
+.booked-service-title{
+    font-size: 1rem;
+    font-weight: var(--fw-semi-bold);
+}
+.booked-staff{
+    font-size: .65rem;
+    font-weight: var(--fw-regular);
+    margin-bottom: .7rem;
+}
+.service-time{
+    font-size: .65rem;
+    font-weight: var(--fw-regular);
+    
+    margin-bottom: .7rem;
+}
+
+.calendar-add{
+    display: inline-block;
+    padding: .5rem .6rem;
+    color: white;
+    background-color: var(--clr--pink-200);
+    border: none;
+
+    font-size: .7rem;
+}
+
+.check-out-more{
+    text-decoration: underline;
+    color: var(--clr--pink-200);
+    font-weight: var(--fw-regular);
+}
+
+@media (max-width: 600px){
+
+    .complete-booking-content{
+        gap:1rem;
+        padding:2rem 3.5rem;
+    }
+
+   .complete-booking-title{
+       font-size: 1.8rem;
+       font-weight: var(--fw-bold);
+       
+   } 
+
+   .complete-booking-subtitle{
+         font-size: 1rem;
+         font-weight: var(--fw-regular);
+   }
+
+   .final-booking-info{
+       display: none;
+   }
+
+   .calendar-mobile{
+       padding: 1rem 1rem;
+       font-size: var(--fs-200)
+   }
+
+   .check-out-more{
+       font-size: .9rem;
+   }
+}
